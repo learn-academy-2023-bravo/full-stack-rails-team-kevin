@@ -38,6 +38,56 @@ Show
 - display one item
 - GET request
 - Read CRUD action
-- controller action
+- controller action check!
 - route
+ - added parameter
+ - added aliases
 - view  
+  linked back to home and from home to show
+
+New
+- display a form
+- GET request
+- Read 
+- controller method
+ uses the .new method
+- route
+  reorder the routes
+- view
+  Rails forms : https://guides.rubyonrails.org/form_helpers.html
+  added links to the form
+
+Create
+- adds content from the form to the db
+- POST request
+- create CRUD action
+- controller
+ -     @book = Book.create(book_params)
+ #strong params: security
+ def book_params
+    params.require(:book).permit(:name, :read)
+  end
+
+  redirect_to books_path
+
+- route check!
+- view  not necessary 
+ 
+Destroy
+- controller
+- route
+- view
+ show.html.erb:
+    <p><%= link_to 'Remove Book', delete_book_path(book), method: 'delete' %></p>
+
+
+## Edit
+- controller
+- routes
+- view
+
+
+## Update
+- controller
+- routes
+- view
