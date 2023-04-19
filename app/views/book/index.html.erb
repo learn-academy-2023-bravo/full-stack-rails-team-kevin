@@ -1,0 +1,8 @@
+<h2>My Reading Tracker</h2>
+  <ul>
+  <% @books.each do |value| %>
+    <li>
+      <%= link_to value.name, book_path(value) %>
+    </li>
+  <% end %>  
+  </ul>
