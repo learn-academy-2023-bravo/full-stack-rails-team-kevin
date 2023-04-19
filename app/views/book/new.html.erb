@@ -1,0 +1,9 @@
+<h1> Add a Book! </h1>
+
+<%= form_with model: @book do |form|%>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :read %>
+  <%= form.text_field :read %>
+  <%= form.submit "Submit" %>
+<% end %>

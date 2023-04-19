@@ -3,3 +3,5 @@
 <h4>Have I read this book yet?  <%= @book.read %></h4>
 
 <h5><%= link_to 'Back to Books', books_path %> </h5>
+<h5><%= link_to 'Update this Book', edit_book_path(@book) %> </h5>
+<p><%= button_to 'Remove Book', delete_book_path(@book), method: 'delete' %></p>
